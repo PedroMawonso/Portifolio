@@ -1,60 +1,54 @@
 <!doctype html>
-<html lang="pt-br">
+<html
+  lang="pt-br"
+  class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta
       http-equiv="X-UA-compatible"
-      content="IE=edge"
-    />
+      content="IE=edge" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+      content="width=device-width, initial-scale=1.0" />
     <title>My personal portifolio</title>
     <link
       rel="stylesheet"
-      href="../style/output.css"
-    />
+      href="../style/output.css" />
   </head>
   <body class="font-poppins bg-[#1f242d]">
     <!-- BEGIN - HEADER PAGE -->
     <nav
-      class="fixed left-0 top-0 w-full pt-6.25 pl-[9%] pr-[9%] flex justify-between items-center z-100"
-    >
+      class="fixed left-0 top-0 w-full pt-6.25 pl-[9%] pr-[9%] flex justify-between items-center bg-[#1f242d] z-100">
       <a
         href="#"
         class="text-white text-[30px] font-bold"
         >Porti<span class="text-[#7cf03d]">fólio.</span></a
       >
       <ul class="flex">
-        <li
-          class="list-none ml-8.75 [&_a]:hover:text-[#7cf03d] [&.active_a]:text-[#7cf03d] active"
-        >
+        <li class="style_menu active">
           <a
-            href="#"
+            href="#home"
             class="text-white text-[18px] font-medium duration-500"
             >Home</a
           >
         </li>
-        <li class="list-none ml-8.75 [&_a]:hover:text-[#7cf03d]">
+        <li class="style_menu">
           <a
-            href="#"
+            href="#about"
             class="text-white text-[18px] font-medium duration-500"
             >About</a
           >
         </li>
-        <li class="list-none ml-8.75 [&_a]:hover:text-[#7cf03d]">
+        <li class="style_menu">
           <a
-            href="#"
+            href="#projects"
             class="text-white text-[18px] font-medium duration-500"
             >Projects</a
           >
         </li>
-        <li
-          class="list-none ml-8.75 [&_a]:hover:text-[#7cf03d] [&.active_a]:text-[#7cf03d]"
-        >
+        <li class="style_menu">
           <a
-            href="#"
+            href="#contacts"
             class="text-white text-[18px] font-medium duration-500"
             >Contacts</a
           >
@@ -65,11 +59,12 @@
 
     <!-- BEGIN - SECTION PAGE -->
 
+    <!-- Begin - Home section page -->
     <section
       class="flex items-center h-screen pt-15 pl-[9%] pr-[9%] pb-0 text-white"
-    >
+      id="home">
       <div>
-        <h1 class="text-[55px]">Pedro Mawonso Avelino</h1>
+        <h1 class="text-[55px] font-bold">Pedro Mawonso Avelino</h1>
         <h2 class="text-[32px] -mt-3.5px">I'm Front-End Developer</h2>
         <p class="text-[16px] mt-2.5 pr-[50%] justify-center ml-0 mb-6.25">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
@@ -81,35 +76,26 @@
           <div>
             <a
               href="#"
-              class="inline-block mt-3.75 p-[10px_10px] pl-10.5 pr-10.5 bg-[#7cf03d] border-[#7cf03d] border-2 rounded-[40px] shadow-[0_0_10px_#7cf03d] text-[16px] text-[#1f242d] font-semibold duration-500 hover:bg-transparent hover:text-[#7cf03d] hover:shadow-none"
+              class="btn-download"
+              download="curriculum_vitae.pdf"
               >Download CV</a
             >
           </div>
           <div class="items-center">
             <a
-              href="#"
-              class="inline-flex p-2 border-2 border-[#7cf03d] rounded-full text-[20px] m-[15px_8px] duration-500 hover:border-[#1f242d]"
-            >
+              href="https://github.com/PedroMawonso"
+              class="links">
               <img
                 src="../acesst/bxl github.svg"
                 alt="linkedin"
-                class="w-6 h-6"
-              />
+                class="w-6 h-6" />
             </a>
             <a
-              href="#"
-              class="inline-flex p-2 border-2 border-[#7cf03d] rounded-full text-[20px] m-[15px_8px] duration-500 hover:border-[#1f242d]"
+              href="https://linkedin.com/in/pedro-mawonso-5352102b0"
+              class="links"
               ><img
                 src="../acesst/bxl linkedin.svg"
                 alt="linkedin"
-                class="w-6 h-6"
-            /></a>
-            <a
-              href="#"
-              class="inline-flex p-2 border-2 border-[#7cf03d] rounded-full text-[20px] m-[15px_8px] duration-500 hover:border-[#1f242d]"
-              ><img
-                src="../acesst/bxl whatsapp.svg"
-                alt="whatsapp"
                 class="w-6 h-6"
             /></a>
           </div>
@@ -119,17 +105,46 @@
       <div>
         <div class="w-[25vw] h-[25vw] rounded-full">
           <div
-            class="h-full w-full rounded-full relative flex justify-center overflow-hidden bg-[conic-gradient(#7cf03d,transparent,transparent,#7cf03d)]"
-          >
+            class="h-full w-full rounded-full relative flex justify-center overflow-hidden bg-[conic-gradient(#7cf03d,transparent,transparent,#7cf03d)]">
             <img
               src="../acesst/Mawonso.png"
               alt=""
-              class="absolute block w-[85%] h-full object-cover"
-            />
+              class="absolute block w-[85%] h-full object-cover" />
           </div>
         </div>
       </div>
     </section>
+    <!-- End - Home section page -->
+
+    <!-- Begin - About section page -->
+    <section
+      class="border-t-3 flex items-center justify-center border-[#7cf03d] h-screen scroll-mt-20"
+      id="about">
+      <div class="flex items-center justify-center">
+        <h1 class="text-white mt-20">About me</h1>
+      </div>
+    </section>
+    <!-- End - About section page -->
+
+    <!-- Begin - Projects section page -->
+    <section
+      class="border-t-3 flex items-center justify-center border-[#7cf03d] h-screen scroll-mt-20"
+      id="projects">
+      <div class="flex items-center justify-center">
+        <h1 class="text-white mt-20">Projects</h1>
+      </div>
+    </section>
+    <!-- End - Projects section page -->
+
+    <!-- Begin - Contacts section page -->
+    <section
+      class="border-t-3 flex items-center justify-center border-[#7cf03d] h-screen scroll-mt-20"
+      id="contacts">
+      <div class="flex items-center justify-center">
+        <h1 class="text-white mt-20">Contants</h1>
+      </div>
+    </section>
+    <!-- End - Contacts section page -->
 
     <!-- END - SECTION PAGE -->
 
