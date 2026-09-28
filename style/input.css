@@ -8,6 +8,11 @@
   --font-poppins: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 110px;
+}
+
 @layer components {
   .links {
     @apply inline-flex p-2 border-2 border-[#7cf03d] rounded-full text-[20px] m-[15px_8px] duration-500 hover:border-[#1f242d];
